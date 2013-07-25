@@ -1,6 +1,16 @@
 # MH - Minimalistic Haml for Javascript
 
-This is a very simple Javascript helper I use to make my Javascript code easier to read when I have to generate some HTML fragment. It's easiest to describe what it does by examples:
+This is a very simple Javascript helper I use to make my Javascript code easier to read when I have to generate some HTML fragment.
+
+To use it in browser:
+
+    <script type="text/javascript" src="mh.js"></script>
+
+To use it with node.js:
+
+    var mh = require ('./mh.js');
+
+It's easiest to describe what it does by examples.
 
     // plain JS
     "<div></div>"
@@ -40,6 +50,3 @@ This is a very simple Javascript helper I use to make my Javascript code easier 
             "  span." + classC,
             "    \0" + text,        // \0 means: treat this line as is, ie no translation
             "")
-
-    </div>
-
