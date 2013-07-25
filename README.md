@@ -50,3 +50,5 @@ It's easiest to describe what it does by examples.
             "  span." + classC,
             "    \0" + text,        // \0 means: treat this line as is, ie no translation
             "")
+
+See ```example-oocss-template.html``` for a more complete example where the html file at <http://oocss.org/template.html> has been rewritten using MH.
