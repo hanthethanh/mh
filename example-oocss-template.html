@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Template Documentation</title>
+<link rel="stylesheet" type="text/css" media="all"  href="http://oocss.org/css/libraries.css" />
+<link rel="stylesheet" type="text/css" media="all"  href="http://oocss.org/css/template.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://oocss.org/css/grids.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://oocss.org/css/content.css" />
+<link rel="stylesheet" type="text/css" media="all" href="http://oocss.org/css/mod.css" />
+<script type="text/javascript" src="mh.js"></script>
+<script type="text/javascript">
+    function testMH() {
+        var ipsum = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        var html = mh.html(
+                "h1",
+                "  Template",
+                "div.page",
+                "  div.head",
+                "    h1",
+                "      Head",
+                "    p",
+                "      " + ipsum,
+                "  div.body",
+                "    div.leftCol",
+                "      h2",
+                "        Left Column",
+                "      p",
+                "        Left column is 250px by default. It can be extended by several classes to allow for additional layouts.",
+                "      ul",
+                "        li",
+                "          .gMail = 160px",
+                "        li",
+                "          .gCal = 180px",
+                "        li",
+                "          .yahoo = 240px",
+                "        li",
+                "          .myYahoo = 300px",
+                "    div.rightCol",
+                "      h2",
+                "        Right Column",
+                "      p",
+                "        The right column is by default 300px wide.  It can be extended via all the same classes that are available to right column.",
+                "    div.main",
+                "      h2",
+                "        Main Content",
+                "      p",
+                '        Main Content is fully liquid. It takes all the remaining space on the line after the widths of "leftCol" and "rightCol" are taken into account. Alternatively, grids can be used to break up the main content area for fully fluid layouts.',
+                "  div.foot",
+                "      h2",
+                "        Foot",
+                "      p",
+                "        " + ipsum,
+                "");
+        console.log(html);
+        //document.getElementById('abc').innerHHML = html;
+        document.body.innerHTML = html;
+    }
+
+    setTimeout(testMH, 1000);
+</script>
+</head>
+<body>
+</body>
+</html>

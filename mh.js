@@ -11,7 +11,7 @@
     }
 
     var slice = Array.prototype.slice;
-    var selectorPattern = /^(\s*)(div|span|ul|ol|li|td|tr|th|table|thead|tbody|a|button|select|option)\b((?:#[^. ]+)?)((?:\.\S+)?)(.*)$/i;
+    var selectorPattern = /^(\s*)(h[1-6]|p|div|span|ul|ol|li|td|tr|th|table|thead|tbody|a|button|select|option)\b((?:#[^. ]+)?)((?:\.\S+)?)(.*)$/i;
     // match:               1    2                                                                      3             4           5
     // 1 indentation
     // 2 tagName
